@@ -18,5 +18,5 @@ int main()
 {
     int start=0,end=4;
     int price[5]={1,4,1,9,3};
-    maxProfit(price,start,end);
+    cout<<maxProfit(price,start,end);
 }
