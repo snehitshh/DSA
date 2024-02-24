@@ -18,3 +18,4 @@ int main()
   int arr[n]={5,10,20,6,3,8};
   cout<<longest(arr,n);
 }       
+
