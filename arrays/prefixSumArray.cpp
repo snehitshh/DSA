@@ -12,8 +12,9 @@ int main()
    int arr[n]={2,8,3,9,6,5,4};
    int ps[n];                 //preprocessing before the function call
    ps[0]=arr[0];              //first prefix sum will be the first element
-   for(int i=0;i<n;i++){      
-    ps[i]=ps[i-1]+arr[i];     //finding the prefix sum for every element
+   for(int i=0;i<n;i++){                                                   //below for prefix weighted sum
+    ps[i]=ps[i-1]+arr[i];     //finding the prefix sum for every element  // for pwSum expression will be pwSum[i]=i*arr[i]+pwSum[i];
    }
    cout<<getSum(ps,1,2);
 }
+
