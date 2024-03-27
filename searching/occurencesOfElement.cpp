@@ -43,7 +43,7 @@ int indexElement(int arr[],int n,int x){
     return -1;
 }
 int countOcc(int arr[],int n,int x){
-    int first=indexElement(arr,n,x);
+    int first=indexElement(arr,n,x);//calling the function for first index of an element
  if(first==-1){
     return 0;
  }
