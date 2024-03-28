@@ -3,7 +3,6 @@ using namespace std;
 int Peak(int arr[], int n)
 {
 	int low = 0, high = n - 1;
-
 		while(low <= high)
 		{
 			int mid = (low + high) / 2;
@@ -17,7 +16,6 @@ int Peak(int arr[], int n)
 		}
 	return -1;
 }
-
 int main() {
 int  n = 7;
 int arr[n] = {5, 20, 40, 30, 20, 50, 60};
