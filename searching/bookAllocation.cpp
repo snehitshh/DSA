@@ -1,18 +1,17 @@
 #include <bits/stdc++.h> 
 using namespace std; 
-
 bool isFeasible(int arr[],int n,int k, int ans){
-    int req=1,sum=0;
+    int student=1,sum=0;
     for(int i=0;i<n;i++){
         if(sum+arr[i]>ans){
-            req++;
+            student++;
             sum=arr[i];
         }
         else{
             sum+=arr[i];
         }
     }
-    return (req<=k);
+    return (student<=k);
 }
 int minPages(int arr[],int n, int k){
     int sum=0,mx=0;
@@ -21,7 +20,7 @@ int minPages(int arr[],int n, int k){
         mx=max(mx,arr[i]);
     }
     int low=mx,high=sum,res=0;
-    
+
     while(low<=high){
         int mid=(low+high)/2;
         if(isFeasible(arr,n,k,mid)){
@@ -38,6 +37,5 @@ int main()
     int arr[]={10,20,10,30};
     int n=sizeof(arr)/sizeof(arr[0]);
     int k=2;
-    
     cout<<minPages(arr,n,k);
 } 
