@@ -1,4 +1,5 @@
 #include <bits/stdc++.h> 
+
 using namespace std; 
 bool isFeasible(int arr[],int n,int k, int ans){
     int student=1,sum=0;
