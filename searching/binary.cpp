@@ -20,7 +20,7 @@ int main(){
     int n=7;
       int array[] = {2,4,7,9,10,13,20};
   int result = binary(array, 0, n - 1, 13);
-  if (result == -1){
+  if (result == -1){    
       cout<<"Element doesn't exist in the array";
   }
   else{
